@@ -52,7 +52,7 @@ def play_game():
         else:
             play = False
 
-        os.system('clear')
+        os.system('cls' if os.name == 'nt' else 'clear')
 
     print(logo)
     print(f"Sorry, that's wrong. Final Score: {score}.")
